@@ -13,7 +13,6 @@ namespace CSLight
             int gold;
             int crystall = 10;
             int overCrystall;
-            int totalCrystall;
 
             Console.WriteLine("Привет! Один кристалл стоит десять золота");
             Console.WriteLine("Сколько у вас золота?");
@@ -31,8 +30,8 @@ namespace CSLight
             else 
             {                
                 gold -= overCrystall;
-                totalCrystall = overCrystall / 10;
-                Console.WriteLine("У вас - " + totalCrystall + " кристаллов " + gold + " золота");
+                overCrystall = overCrystall / 10;
+                Console.WriteLine("У вас - " + overCrystall + " кристаллов " + gold + " золота");
                 Console.ReadKey();
             }
         }
